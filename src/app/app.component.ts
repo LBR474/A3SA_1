@@ -61,7 +61,7 @@ import { gsap } from 'gsap';
         </svg>
       </div>
       <div class="titleDiv" [@FMopenClose]="FMisOpen ? 'open' : 'closed'">
-        <h1>A digital design experience (click gemstone for sound)</h1>
+        <h1>A digital design experience </h1>
       </div>
       <div class="canvasDiv" [@FMopenClose]="FMisOpen ? 'open' : 'closed'">
         <ngt-canvas
