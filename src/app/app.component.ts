@@ -1,7 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { Scene } from './components/scene.component';
 import { NgtCanvas } from 'angular-three';
-import { Grid } from '../older_backup_material/grid.component';
+
 
 import {
   FMopenClose,
@@ -76,7 +76,7 @@ import { gsap } from 'gsap';
       </div>
     </div>
   `,
-  imports: [NgtCanvas, Grid],
+  imports: [NgtCanvas],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   animations: [
     FMopenClose,
@@ -104,6 +104,8 @@ export class AppComponent implements OnInit {
       this.TDisOpen = true;
     }, 1500);
   }
+
+  
 
   rightAnimDone(event: any) {
     if (event.fromState != 'void') {
