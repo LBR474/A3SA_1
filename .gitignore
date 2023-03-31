@@ -37,7 +37,7 @@ yarn-error.log
 testem.log
 /typings
 /older_backup_material/
-/src/app/components/app.component.html
+app.component.html
 
 # System files
 .DS_Store
