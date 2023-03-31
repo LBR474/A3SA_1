@@ -1,7 +1,7 @@
 import {
   Component,
   CUSTOM_ELEMENTS_SCHEMA,
-  ElementRef,
+  
   inject,
   ViewChild,
 } from '@angular/core';
@@ -129,7 +129,7 @@ export class Scene {
     // create a global audio source
     const sound = new THREE.Audio(listener);
 
-    // load a sound and set it as the Audio object's buffer
+    // load a sound and set it as the Audio object's 
     const audioLoader = new THREE.AudioLoader();
     audioLoader.load('assets/mysounds/358232_j_s_song.ogg', function (buffer) {
       sound.setBuffer(buffer);
