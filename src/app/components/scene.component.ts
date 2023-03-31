@@ -64,7 +64,7 @@ export class Scene {
 
   constructor() {
     this.create_sound();
-    //console.log(this.events);
+    
   }
   // readonly model$ = injectNgtLoader(
   //   () => GLTFLoader,
