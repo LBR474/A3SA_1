@@ -42,7 +42,8 @@ extend({ OrbitControls });
       [position]="[0, 0, 0]"
       
       (beforeRender)="onBeforeRender($any($event))"
-      (ready)="this.create_sound()"
+      
+      (click)="this.create_sound()"
     />
     
     <ngt-orbit-controls
@@ -63,7 +64,7 @@ export class Scene {
   readonly events = this.store.get('events');
 
   constructor() {
-    this.create_sound();
+    //this.create_sound();
     
   }
   // readonly model$ = injectNgtLoader(
@@ -130,13 +131,13 @@ export class Scene {
 
     // load a sound and set it as the Audio object's buffer
     const audioLoader = new THREE.AudioLoader();
-    audioLoader.load('../assets/sounds/358232_j_s_song.ogg', function (buffer) {
+    audioLoader.load('../assets/mysounds/358232_j_s_song.ogg', function (buffer) {
       sound.setBuffer(buffer);
       sound.setLoop(true);
       sound.setVolume(0.5);
       setTimeout(() => {
         sound.play();
-      }, 5000);
+      }, 1000);
     });
   };
 }
