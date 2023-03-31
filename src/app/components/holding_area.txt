@@ -1,0 +1,21 @@
+<ngt-grid-helper [args]="[400, 40, 'pink']" 
+    [position]="[0, 0, 0]"
+    [rotation]="[45, 0, 0]"
+    
+    >
+
+    <!-- <ngt-mesh  [material]="material"
+     [rotation]="rotation"
+     >
+  <ngt-plane-geometry [args]="[30.0, 30.0]"/>
+  
+</ngt-mesh> -->
+
+
+<ngt-mesh [geometry]="planeGeometry" [material]="material"
+    [rotation]="rotation"
+    [position]="[0, 0.1, 0]"
+    > </ngt-mesh>
+
+
+    *args="[{light: 'spotLight1'}]"
